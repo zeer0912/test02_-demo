@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- signin end -->
+		<section class="signin popup-in">
+			<div class="container">
+				<div class="sign-content popup-in-content">
+					<div class="popup-in-txt">
+						<h2>登录</h2>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="signin-form">
+									<label style="color: red" th:text="${msg}"></label>
+									<form action="login" method="post" >
+										<div class="form-group">
+										    <label for="signin_form">手机号</label>
+										    <input type="text" name="phoneNumber" class="form-control" id="signin_form" placeholder="请输入11位手机号">
+										</div><!--/.form-group -->
+										<div class="form-group">
+											<label for="signin_form">密码</label>
+										    <input type="password" name="password" class="form-control" id="signin_form" placeholder="请输入密码">
+										</div><!--/.form-group -->
+										<div class="signin-footer">
+											<button type="submit" class="btn signin_btn signin_btn_two" data-toggle="modal" data-target=".signin_modal">
+												sign in
+											</button>
+											<p>
+												还未有账户 ?
+												<a href="register">注册</a>
+											</p>
+										</div><!--/.signin-footer -->
+									</form><!--/form -->
+								</div><!--/.signin-form -->
+							</div><!--/.col -->
+						</div><!--/.row -->
+
+						<div class="row">
+							<div class="col-sm-12">
+
+							</div><!--/.col -->
+						</div><!--/.row -->
+					</div><!-- .popup-in-txt -->
+				</div><!--/.sign-content -->
+			</div><!--/.container -->
+		</section><!--/.signin -->
+		
+		<!-- signin end -->
+
+		<!--footer copyright start -->
+		<footer class="footer-copyright">
+			<div id="scroll-Top">
+				<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+			</div><!--/.scroll-Top-->
+
+		</footer><!--/.hm-footer-copyright-->
+		<!--footer copyright  end -->
+
+    </body>
+	
+</html>
