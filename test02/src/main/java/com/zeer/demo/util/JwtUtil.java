@@ -38,7 +38,7 @@ public class JwtUtil {
     public String createToken(String subject) {
         Date now = new Date();
         // 过期时间
-        Date expireDate = new Date(now.getTime() + 10*1000);
+        Date expireDate = new Date(now.getTime() + expire*1000);
 
         //创建Signature SecretKey
         final SecretKey key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
